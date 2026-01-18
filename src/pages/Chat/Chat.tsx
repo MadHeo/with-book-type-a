@@ -108,7 +108,7 @@ function Chat() {
                         {chat.lastMessage}
                       </p>
                     )}
-                    {chat.status === 'chatting' && chat.unreadCount > 0 && (
+                    {chat.status === 'chatting' && chat.unreadCount && chat.unreadCount > 0 && (
                       <span className="ml-2 px-2 py-0.5 bg-orange-500 text-white text-xs rounded-full font-medium">
                         {chat.unreadCount}
                       </span>
