@@ -30,7 +30,7 @@ function ProfileDetail() {
   return (
     <div className="flex flex-col pb-20">
       {/* 헤더 */}
-      <div className="bg-gradient-to-r from-pink-500 to-rose-400 text-white p-6 relative">
+      <div className="bg-gradient-to-r from-orange-500 to-orange-400 text-white p-6 relative">
         <button
           onClick={() => navigate(-1)}
           className="absolute top-6 left-4 text-white text-2xl"
@@ -42,7 +42,7 @@ function ProfileDetail() {
             <span className="text-5xl">👩</span>
           </div>
           <h1 className="text-2xl font-bold mb-1">{user.name}</h1>
-          <p className="text-pink-50">
+          <p className="text-orange-50">
             {user.age}세 · {user.location}
           </p>
         </div>
@@ -83,7 +83,7 @@ function ProfileDetail() {
           onClick={() => {
             alert(`${user.name}님에게 쪽지를 보냈습니다! 💌`);
           }}
-          className="w-full bg-gradient-to-r from-pink-500 to-rose-400 text-white py-4 rounded-2xl font-bold hover:from-pink-600 hover:to-rose-500 transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="w-full bg-gradient-to-r from-orange-500 to-orange-400 text-white py-4 rounded-2xl font-bold hover:from-orange-600 hover:to-orange-500 transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           💌 쪽지 보내기
         </button>

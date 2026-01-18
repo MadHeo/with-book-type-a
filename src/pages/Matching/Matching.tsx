@@ -70,7 +70,7 @@ function Matching() {
           </p>
           <button
             onClick={() => navigate('/book-register')}
-            className="bg-gradient-to-r from-pink-500 to-rose-400 text-white px-8 py-3 rounded-xl font-semibold hover:from-pink-600 hover:to-rose-500 transition-all duration-300 shadow-md hover:shadow-lg"
+            className="bg-gradient-to-r from-orange-500 to-orange-400 text-white px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-500 transition-all duration-300 shadow-md hover:shadow-lg"
           >
             책 등록하러 가기
           </button>
@@ -91,9 +91,9 @@ function Matching() {
   return (
     <div className="flex flex-col pb-20">
       {/* 헤더 */}
-      <div className="bg-gradient-to-r from-pink-500 to-rose-400 text-white p-6 rounded-b-3xl shadow-lg">
+      <div className="bg-gradient-to-r from-orange-500 to-orange-400 text-white p-6 rounded-b-3xl shadow-lg">
         <h1 className="text-2xl font-bold mb-2">💕 오늘의 매칭</h1>
-        <p className="text-pink-50">비슷한 책을 읽은 이성을 만나보세요</p>
+        <p className="text-orange-50">비슷한 책을 읽은 이성을 만나보세요</p>
       </div>
 
       {/* 매칭 목록 - 컴팩트한 카드 */}
@@ -107,7 +107,7 @@ function Matching() {
             <div className="flex items-center p-4 gap-4">
               {/* 프로필 이미지 - 왼쪽 작은 원형 */}
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 rounded-full flex items-center justify-center shadow-sm">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 via-amber-100 to-yellow-100 rounded-full flex items-center justify-center shadow-sm">
                   <span className="text-3xl">
                     {index % 4 === 0 ? '👩' : index % 4 === 1 ? '👩‍🦰' : index % 4 === 2 ? '👩‍🦱' : '👱‍♀️'}
                   </span>
@@ -159,7 +159,7 @@ function Matching() {
         {/* 새 매칭 버튼 */}
         <button
           onClick={generateNewMatches}
-          className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3.5 rounded-2xl font-bold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 mt-4"
+          className="w-full bg-gradient-to-r from-orange-500 to-orange-400 text-white py-3.5 rounded-2xl font-bold hover:from-orange-600 hover:to-orange-500 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 mt-4"
         >
           <span className="text-xl">🔄</span>
           새로운 매칭 보기

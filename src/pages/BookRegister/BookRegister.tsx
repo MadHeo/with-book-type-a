@@ -31,7 +31,7 @@ function BookRegister() {
   return (
     <div className="flex flex-col h-screen pb-16">
       {/* 헤더 */}
-      <div className="bg-pink-500 text-white p-4">
+      <div className="bg-orange-500 text-white p-4">
         <h1 className="text-xl font-bold">읽은 책 등록</h1>
         <p className="text-sm mt-1">최소 1권 이상 등록해주세요</p>
       </div>
@@ -43,7 +43,7 @@ function BookRegister() {
           placeholder="책 제목을 검색하세요"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500"
         />
       </div>
 
@@ -70,7 +70,7 @@ function BookRegister() {
                 </div>
                 <button
                   onClick={() => handleAddBook(book)}
-                  className="px-4 py-2 bg-pink-500 text-white rounded-lg text-sm hover:bg-pink-600 transition"
+                  className="px-4 py-2 bg-orange-500 text-white rounded-lg text-sm hover:bg-orange-600 transition"
                   disabled={selectedBooks.some((b) => b.id === book.id)}
                 >
                   {selectedBooks.some((b) => b.id === book.id)
@@ -91,10 +91,10 @@ function BookRegister() {
               {selectedBooks.map((book) => (
                 <div
                   key={book.id}
-                  className="flex justify-between items-center p-4 bg-pink-50 rounded-lg"
+                  className="flex justify-between items-center p-4 bg-orange-50 rounded-lg"
                 >
                   <div>
-                    <h3 className="font-semibold text-pink-700">
+                    <h3 className="font-semibold text-orange-700">
                       {book.title}
                     </h3>
                     <p className="text-sm text-gray-600">{book.author}</p>
@@ -119,7 +119,7 @@ function BookRegister() {
           disabled={selectedBooks.length === 0}
           className={`w-full py-4 rounded-lg font-semibold transition ${
             selectedBooks.length > 0
-              ? 'bg-pink-500 text-white hover:bg-pink-600'
+              ? 'bg-orange-500 text-white hover:bg-orange-600'
               : 'bg-gray-300 text-gray-500 cursor-not-allowed'
           }`}
         >

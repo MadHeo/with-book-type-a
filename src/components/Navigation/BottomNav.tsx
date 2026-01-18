@@ -9,8 +9,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { path: '/', label: '매칭', icon: '💕' },
   { path: '/book-register', label: '책 등록', icon: '📚' },
-  { path: '/message', label: '쪽지', icon: '✉️' },
-  { path: '/chat/list', label: '채팅', icon: '💬' },
+  { path: '/chat', label: '채팅', icon: '💬' },
 ];
 
 function BottomNav() {
@@ -22,14 +21,14 @@ function BottomNav() {
       <div className="flex justify-around items-center h-16">
         {navItems.map((item) => {
           const isActive = location.pathname === item.path ||
-                          (item.path === '/chat/list' && location.pathname.startsWith('/chat'));
+                          (item.path === '/chat' && location.pathname.startsWith('/chat'));
 
           return (
             <button
               key={item.path}
               onClick={() => navigate(item.path)}
               className={`flex flex-col items-center justify-center w-full h-full transition-colors ${
-                isActive ? 'text-pink-500' : 'text-gray-500'
+                isActive ? 'text-orange-500' : 'text-gray-500'
               }`}
             >
               <span className="text-2xl mb-1">{item.icon}</span>
